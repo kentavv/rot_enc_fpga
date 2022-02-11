@@ -1,0 +1,203 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 1991-2014 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus II 64-Bit
+# Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
+# Date created = 14:33:29  May 16, 2014
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		rot_enc_fpga_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Altera recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus II software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE22F17C6
+set_global_assignment -name TOP_LEVEL_ENTITY rot_enc_fpga
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "14:33:29  MAY 16, 2014"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 1
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (VHDL)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_J15 -to KEY[0]
+set_location_assignment PIN_A11 -to LED[3]
+set_location_assignment PIN_B13 -to LED[2]
+set_location_assignment PIN_A13 -to LED[1]
+set_location_assignment PIN_A15 -to LED[0]
+set_location_assignment PIN_R8 -to CLOCK_50
+set_global_assignment -name ENABLE_CONFIGURATION_PINS OFF
+set_global_assignment -name ENABLE_NCE_PIN OFF
+set_global_assignment -name ENABLE_BOOT_SEL_PIN OFF
+set_global_assignment -name USE_CONFIGURATION_DEVICE OFF
+set_global_assignment -name CRC_ERROR_OPEN_DRAIN OFF
+set_global_assignment -name RESERVE_ALL_UNUSED_PINS_WEAK_PULLUP "AS INPUT TRI-STATED"
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_NEAR_END_VMEAS "HALF VCCIO" -fall
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -rise
+set_global_assignment -name OUTPUT_IO_TIMING_FAR_END_VMEAS "HALF SIGNAL SWING" -fall
+set_location_assignment PIN_L3 -to LED[7]
+set_location_assignment PIN_B1 -to LED[6]
+set_location_assignment PIN_F3 -to LED[5]
+set_location_assignment PIN_D1 -to LED[4]
+set_location_assignment PIN_D3 -to GPIO_00
+set_location_assignment PIN_A2 -to GPIO_02
+set_location_assignment PIN_C3 -to GPIO_01
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_00
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_01
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_02
+set_location_assignment PIN_E1 -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to CLOCK_50
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to KEY[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[7]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[5]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[4]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to LED[6]
+set_global_assignment -name ENABLE_SIGNALTAP OFF
+set_global_assignment -name USE_SIGNALTAP_FILE stp1.stp
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RS
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RW
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DB[3]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DB[2]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DB[1]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to DB[0]
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to E
+set_location_assignment PIN_T10 -to RS
+set_location_assignment PIN_P11 -to RW
+set_location_assignment PIN_N12 -to E
+set_location_assignment PIN_L16 -to DB[0]
+set_location_assignment PIN_R16 -to DB[1]
+set_location_assignment PIN_P15 -to DB[2]
+set_location_assignment PIN_R14 -to DB[3]
+set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH quad_decode_vhdl_tb -section_id eda_simulation
+set_global_assignment -name EDA_TEST_BENCH_NAME quad_decode_vhdl_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id quad_decode_vhdl_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME quad_decode_vhdl_tb -section_id quad_decode_vhdl_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME filter_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id filter_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME filter_tb -section_id filter_tb
+set_global_assignment -name PHYSICAL_SYNTHESIS_EFFORT NORMAL
+set_global_assignment -name EDA_TEST_BENCH_NAME lcd_display_vhdl_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id lcd_display_vhdl_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME lcd_display_vhdl_tb -section_id lcd_display_vhdl_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME pos_decode_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id pos_decode_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME pos_decode_tb -section_id pos_decode_tb
+set_global_assignment -name EDA_TEST_BENCH_NAME bcdconv_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id bcdconv_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME bcdconv_tb -section_id bcdconv_tb
+set_global_assignment -name OPTIMIZE_HOLD_TIMING "ALL PATHS"
+set_global_assignment -name OPTIMIZE_MULTI_CORNER_TIMING ON
+set_global_assignment -name FITTER_EFFORT "AUTO FIT"
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to RESET
+set_location_assignment PIN_R10 -to RESET
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_03
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_04
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_05
+set_location_assignment PIN_A3 -to GPIO_03
+set_location_assignment PIN_B3 -to GPIO_04
+set_location_assignment PIN_B4 -to GPIO_05
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_06
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_07
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_08
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_09
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_010
+set_location_assignment PIN_A4 -to GPIO_06
+set_location_assignment PIN_B5 -to GPIO_07
+set_location_assignment PIN_A5 -to GPIO_08
+set_location_assignment PIN_D5 -to GPIO_09
+set_location_assignment PIN_B6 -to GPIO_010
+set_location_assignment PIN_N16 -to M_DIR
+set_location_assignment PIN_K16 -to M_ENABLE
+set_location_assignment PIN_N11 -to M_MS1
+set_location_assignment PIN_L15 -to M_MS2
+set_location_assignment PIN_R11 -to M_PFD
+set_location_assignment PIN_P9 -to M_SLEEP
+set_location_assignment PIN_P16 -to M_STEP
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to M_STEP
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to M_MS1
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to M_ENABLE
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to M_DIR
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to M_MS2
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to M_PFD
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to M_SLEEP
+set_global_assignment -name EDA_TEST_BENCH_NAME stepper_controller_tb -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id stepper_controller_tb
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME stepper_controller_tb -section_id stepper_controller_tb
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0_11
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0_13
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0_15
+set_instance_assignment -name IO_STANDARD "3.3-V LVTTL" -to GPIO_0_17
+set_location_assignment PIN_A6 -to GPIO_0_11
+set_location_assignment PIN_D6 -to GPIO_0_13
+set_location_assignment PIN_C6 -to GPIO_0_15
+set_location_assignment PIN_E6 -to GPIO_0_17
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name EDA_TEST_BENCH_FILE quad_decode_vhdl_tb.vhd -section_id quad_decode_vhdl_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE filter_tb.vhd -section_id filter_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE lcd_display_vhdl_tb.vhd -section_id lcd_display_vhdl_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE pos_decode_tb.vhd -section_id pos_decode_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE bcdconv_tb.vhd.vhd -section_id bcdconv_tb
+set_global_assignment -name EDA_TEST_BENCH_FILE stepper_controller_tb.vhd -section_id stepper_controller_tb
+set_global_assignment -name VHDL_FILE digit.vhd.vhd
+set_global_assignment -name VHDL_FILE bcdconv_tb.vhd.vhd
+set_global_assignment -name VHDL_FILE bcdconv.vhd.vhd
+set_global_assignment -name BDF_FILE rot_enc_fpga.bdf
+set_global_assignment -name QIP_FILE pll.qip
+set_global_assignment -name SDC_FILE rot_enc_fpga.sdc
+set_global_assignment -name VHDL_FILE quad_decode_vhdl.vhd
+set_global_assignment -name SIGNALTAP_FILE stp1.stp
+set_global_assignment -name VHDL_FILE lcd_display_vhdl.vhd
+set_global_assignment -name VHDL_FILE test_vhdl.vhd
+set_global_assignment -name VHDL_FILE quad_decode_vhdl_tb.vhd
+set_global_assignment -name VHDL_FILE filter.vhd
+set_global_assignment -name VHDL_FILE filter_tb.vhd
+set_global_assignment -name VHDL_FILE lcd_display_vhdl_tb.vhd
+set_global_assignment -name VHDL_FILE pos_decode.vhd
+set_global_assignment -name VHDL_FILE pos_decode_tb.vhd
+set_global_assignment -name VHDL_FILE sig_gate.vhd
+set_global_assignment -name VHDL_FILE stepper_controller.vhd
+set_global_assignment -name VHDL_FILE position_syncer.vhd
+set_global_assignment -name VHDL_FILE easydriver_interface.vhd
+set_global_assignment -name VHDL_FILE stepper_controller_tb.vhd
+set_global_assignment -name VHDL_FILE tachometer.vhd
+set_global_assignment -name VHDL_FILE tachometer_pulse.vhd
+set_global_assignment -name VHDL_FILE tester.vhd

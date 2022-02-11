@@ -1,0 +1,7 @@
+{
+	"common_dir" : "C:/Users/kent/local/aa/Rotary encoder/rot_enc_fpga/",
+	"acds_version" : "Version 21.1.0",
+	"platform" : "windows",
+	"os" : "Windows 10",
+	"qpf" : "rot_enc_fpga.qpf"
+}
